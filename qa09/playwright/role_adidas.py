@@ -12,7 +12,7 @@ def test_get_by_role(0)
      page.get_by_role ("Link", name ="contact Name")
      time.sleep(4)
  search_box = page.get_by_role("textbox", name="Search")
-
+    print("search_box.text")
     search_box.fill("shoes")
     search_box.press("Enter")
 

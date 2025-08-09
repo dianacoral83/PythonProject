@@ -12,8 +12,6 @@ def setup_playwright() :
         browser = playwright.chromium.launch(headless=False)
         page = browser.new_page()
 
-        # welcome_page = welcomePage(page)
-        # product_page = productPage(page)
 
         yield page
         print("### Test end ###")
